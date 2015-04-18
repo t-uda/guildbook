@@ -26,6 +26,7 @@ GEM
       tilt
     hike (1.2.3)
     multi_json (1.9.2)
+    power_assert (0.2.3)
     rack (1.5.2)
     rack-protection (1.5.2)
       rack
@@ -63,6 +64,8 @@ GEM
     sprockets-sass (1.0.3)
       sprockets (~> 2.0)
       tilt (~> 1.1)
+    test-unit (3.0.9)
+      power_assert
     tilt (1.4.1)
 
 PLATFORMS
@@ -81,3 +84,4 @@ DEPENDENCIES
   sinatra-asset-pipeline
   sinatra-contrib (~> 1.4)
   smbhash
+  test-unit
