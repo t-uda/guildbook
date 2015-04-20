@@ -13,9 +13,13 @@ class LadleTest < Test::Unit::TestCase
       @server = Ladle::Server.new(
         :port => 3897,
         :ldif => File.expand_path('../test_users.ldif', __FILE__),
+        :custom_schemas => [
+          File.expand_path('../kmc.ldif', __FILE__)
+          #File.expand_path('../samba.ldif', __FILE__)
+        ],
         :domain => 'dc=box2,dc=kmc,dc=gr,dc=jp',
         :tmpdir => @tmpdir,
-        :verbose => true,
+        :verbose => false,
         :quiet => false
       )
       @server.start
@@ -26,15 +30,14 @@ class LadleTest < Test::Unit::TestCase
     end
   end
 
-  def setup
-    @app = GuildBook::App.new
+  def user_repo
+    GuildBook::UserRepo.new('ldap://localhost:3897/ou=users,dc=box2,dc=kmc,dc=gr,dc=jp')
   end
 
   def test_user
-    #users = @app.user_repo.get('aa729')
-    #assert_equal(users.length, 1)
-    #user = users.first
-    #assert_equal(user.cn, 'Alexandra Adams')
+    user = user_repo.get('aa729')
+    assert_equal(user.cn.first, 'Alexandra Adams')
+    assert_equal(user['x-kmc-Lodging'].first, 'TRUE')
   end
 
 end

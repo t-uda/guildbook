@@ -1,16 +1,17 @@
 # Basically, this file is a copy of ladle/lib/ladle/test_users.ldif
 version: 1
 
-dn: ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: organizationalUnit
-ou: people
+ou: users
 
-dn: uid=aa729,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=aa729,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
 objectClass: inetOrgPerson
+objectClass: x-kmc-Person
 cn: Alexandra Adams
 sn: Adams
 givenName: Alexandra
@@ -18,8 +19,9 @@ mail: alexandra@example.org
 uid: aa729
 # Password is "smada"
 userpassword: {SHA}pGlmZX1VOEdHHb30HZezeVNFxGM=
+x-kmc-Lodging: TRUE
 
-dn: uid=bb459,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=bb459,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -32,7 +34,7 @@ uid: bb459
 # Password is "niwdlab"
 userpassword: {SHA}LRif2N+5TDSaO/rdkH2HHF8fF74=
 
-dn: uid=cc414,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=cc414,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -45,7 +47,7 @@ uid: cc414
 # Password is "retneprac"
 userpassword: {SHA}UL/iS+2R7GhwbhXOWoTHd4/qoMA=
 
-dn: uid=dd945,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=dd945,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -58,7 +60,7 @@ uid: dd945
 # Password is "noswad"
 userpassword: {SHA}D0UlcTfbCddFLwih04ig4DEilAc=
 
-dn: uid=ee855,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=ee855,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -71,7 +73,7 @@ uid: ee855
 # Password is "nosreme"
 userpassword: {SHA}pheE9wd/iTps6f8bJjM6AePjwrU=
 
-dn: uid=ff531,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=ff531,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -84,7 +86,7 @@ uid: ff531
 # Password is "relluf"
 userpassword: {SHA}HLU2WZjFf/PF0Pp4qSDzoB3x+bs=
 
-dn: uid=gg855,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=gg855,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -97,7 +99,7 @@ uid: gg855
 # Password is "selaznog"
 userpassword: {SHA}zT4oO9pFXIj+ISIc60bvM8A5+UQ=
 
-dn: uid=hh153,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=hh153,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -110,7 +112,7 @@ uid: hh153
 # Password is "dleiftah"
 userpassword: {SHA}PTDJLPy4kwa7VZ/sGLyCPzZ7d3o=
 
-dn: uid=ii711,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=ii711,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -123,7 +125,7 @@ uid: ii711
 # Password is "margni"
 userpassword: {SHA}L7qElLblWuLNFPrFku60uCuCr7Q=
 
-dn: uid=jj243,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=jj243,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -136,7 +138,7 @@ uid: jj243
 # Password is "noskcaj"
 userpassword: {SHA}ElqdCxdbvRNqXBgdUdkCmGZlQmk=
 
-dn: uid=kk891,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=kk891,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -149,7 +151,7 @@ uid: kk891
 # Password is "enilk"
 userpassword: {SHA}WlNzQqBB/QoEKh3LRcLZHgnCGNw=
 
-dn: uid=ll819,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=ll819,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -162,7 +164,7 @@ uid: ll819
 # Password is "ecnerwal"
 userpassword: {SHA}CzyyPOSrIxgFCm24nSv2FA8wihQ=
 
-dn: uid=mm405,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=mm405,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -175,7 +177,7 @@ uid: mm405
 # Password is "xoddam"
 userpassword: {SHA}WiCnxkOb4kpy16ON7ZC6mD/iqII=
 
-dn: uid=nn297,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=nn297,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -188,7 +190,7 @@ uid: nn297
 # Password is "hsan"
 userpassword: {SHA}1zOsG076wDkikQbnK5vAMM1BM/o=
 
-dn: uid=oo981,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=oo981,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -201,7 +203,7 @@ uid: oo981
 # Password is "nrobso"
 userpassword: {SHA}w8mQw0kEa1UiWzMsNclD/LWzlgs=
 
-dn: uid=pp468,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=pp468,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -214,7 +216,7 @@ uid: pp468
 # Password is "letap"
 userpassword: {SHA}p7jaVoRIV9o8gDPbN10sEhXaYHk=
 
-dn: uid=qq612,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=qq612,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -227,7 +229,7 @@ uid: qq612
 # Password is "neeuq"
 userpassword: {SHA}v9ibNIx42giCH4tQnwUHJy6LeJg=
 
-dn: uid=rr477,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=rr477,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -240,7 +242,7 @@ uid: rr477
 # Password is "dnalwor"
 userpassword: {SHA}S3eMb2C/ctXzbFnlgcH7ZQ/fozU=
 
-dn: uid=ss198,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=ss198,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -253,7 +255,7 @@ uid: ss198
 # Password is "nomolos"
 userpassword: {SHA}EizIKlU79Kz1Y2WIV4deIh0MSA8=
 
-dn: uid=tt882,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=tt882,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -266,7 +268,7 @@ uid: tt882
 # Password is "serrot"
 userpassword: {SHA}yO0DcSZ4fTMcx3sTHnAPQGvMkwg=
 
-dn: uid=uu972,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=uu972,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -279,7 +281,7 @@ uid: uu972
 # Password is "doowrednu"
 userpassword: {SHA}GQWGu8IvIEFU1PP34qGi5DyDF/c=
 
-dn: uid=vv180,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=vv180,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -292,7 +294,7 @@ uid: vv180
 # Password is "srekciv"
 userpassword: {SHA}3UrzY38O4R1GLK6ccSSfL4D0efQ=
 
-dn: uid=ww369,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=ww369,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -305,7 +307,7 @@ uid: ww369
 # Password is "esiw"
 userpassword: {SHA}8gU4KSqUeeLRPov2tmXZXgOZw78=
 
-dn: uid=xx396,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=xx396,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -318,7 +320,7 @@ uid: xx396
 # Password is "gnoix"
 userpassword: {SHA}Yc2En2R/sbdjlEOitkLlkwY4jAY=
 
-dn: uid=yy423,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=yy423,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
@@ -331,11 +333,12 @@ uid: yy423
 # Password is "setay"
 userpassword: {SHA}iKBhwF+Mbbct6mlmy6AvodIek3E=
 
-dn: uid=zz882,ou=people,dc=box2,dc=kmc,dc=gr,dc=jp
+dn: uid=zz882,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
 objectClass: organizationalPerson
 objectClass: inetOrgPerson
+objectClass: x-kmc-Person
 cn: Zana Zimmerman
 sn: Zimmerman
 givenName: Zana
@@ -343,4 +346,5 @@ mail: zana@example.org
 uid: zz882
 # Password is "namremmiz"
 userpassword: {SHA}KlsWojnknRWCHXGoBOTlEZxxrG8=
+x-kmc-Lodging: FALSE
 
