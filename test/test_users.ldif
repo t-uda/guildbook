@@ -6,6 +6,30 @@ objectClass: top
 objectClass: organizationalUnit
 ou: users
 
+dn: ou=groups,dc=box2,dc=kmc,dc=gr,dc=jp
+objectClass: organizationalUnit
+ou: groups
+
+### The Samba schema in ApacheDS is disabled in default and
+### thus related data are not available in Ladle.
+## KMC, box2.kmc.gr.jp
+#dn: sambaDomainName=KMC,dc=box2,dc=kmc,dc=gr,dc=jp
+#objectClass: sambaDomain
+#sambaDomainName: KMC
+#sambaAlgorithmicRidBase: 1000
+#sambaNextUserRid: 1000
+#sambaMinPwdLength: 5
+#sambaPwdHistoryLength: 0
+#sambaLogonToChgPwd: 0
+#sambaMaxPwdAge: -1
+#sambaMinPwdAge: 0
+#sambaLockoutDuration: 30
+#sambaLockoutObservationWindow: 30
+#sambaLockoutThreshold: 0
+#sambaForceLogoff: -1
+#sambaRefuseMachinePwdChange: 0
+#sambaSID: S-1-5-21-792563724-434869193-1042426199
+
 dn: uid=aa729,ou=users,dc=box2,dc=kmc,dc=gr,dc=jp
 objectClass: top
 objectClass: person
